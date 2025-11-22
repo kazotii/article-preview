@@ -93,6 +93,7 @@ p {
   background-color: #d8e4ff;
   padding: 5px;
   width: 32px;
+  height: 27.6px;
   border-radius: 50%;
   text-align: center;
   margin-right: 5px;
@@ -219,3 +220,4 @@ p {
     position: relative;
   }
 }
+
