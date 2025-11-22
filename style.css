@@ -157,7 +157,7 @@ p {
   overflow: hidden;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 500px) {
   .triangle{
     visibility: hidden;
   }
@@ -220,5 +220,6 @@ p {
     position: relative;
   }
 }
+
 
 
