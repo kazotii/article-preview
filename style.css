@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./fonts/Manrope-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./fonts/Manrope-Medium.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./fonts/Manrope-Bold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  background: #b9cffa;
+  font-family: "Manrope";
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 650px;
+  height: 250px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 5px 8px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.bibizyanchik-image {
+  width: 250px;
+  border-radius: 10px;
+  height: 250px;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h3, h4 {
+  font-weight: 800;
+  color:#505050;
+}
+
+h3{
+  font-size: 20px;
+}
+
+.small-text{
+  font-size: 15px;
+  color: #828282;
+  font-weight: 700;
+  margin: 15px 0;
+  padding-bottom: 10px;
+}
+
+.main-content{
+  padding: 20px;
+}
+
+.info{
+  justify-content: space-between;
+}
+
+.avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+p {
+  font-size: 14px;
+  color: #828282;
+  font-weight: 700;
+}
+
+.bg-icon {
+  background-color: #d8e4ff;
+  padding: 5px;
+  width: 32px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+.icon-share {
+  width: 15px;
+}
+
+.bg-icon:hover {
+  background-color: #ff9ccf;
+  cursor: pointer;
+}
+
+.bg-icon:hover .icon-share {
+  filter: brightness(0) invert(1);
+}
+
+.pop-up {
+  position: absolute;
+  background-color: #ff9ccf;
+  padding: 15px 20px;
+  border-radius: 10px;
+  top: 50%;
+  right: 23.5%;
+}
+
+.pop-up * {
+  margin: 0 9px;
+}
+
+.pop-up p {
+  color: #ffffff;
+  letter-spacing: 6px;
+}
+
+.triangle {
+  position: absolute;
+  top: 56.3%;
+  right: 30.4%;
+  border-top: 2vh solid #ff9ccf;
+  border-left: 1vw solid transparent;
+  border-right: 1vw solid transparent;
+}
+
+.pop-up img {
+  width: 20px;
+  height: 20px;
+}
+
+.anim-only {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (max-width: 376px) {
+  .triangle{
+    visibility: hidden;
+  }
+
+  body {
+    display: block;
+    overflow:hidden;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 320px;
+    margin-left: 27px;
+    margin-top: 15px;
+  }
+
+  .main-content {
+    background-color: #ffffff;
+    padding-top: 0;
+    padding-bottom: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  .p {
+    max-width: 95%;
+  }
+
+  .bibizyanchik-image {
+    min-width: 100%;
+    height: 380px;
+    vertical-align: middle;
+    border-radius: 10px 10px 0 0; 
+    padding-top: 5px;
+  }
+
+  .info,
+  .info div:first-of-type {
+    flex-direction: row;
+  }
+
+  .pop-up {
+    flex-direction: row;
+    min-width: 100%;
+    height: 55px;
+    padding: 15px 93.4px 15px 20px;
+    top: -10%;
+    right: -7.1%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .bg-icon,
+  .info {
+    position: relative;
+  }
+}
